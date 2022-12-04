@@ -1,25 +1,37 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roy Chaaya Cirriculum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <link rel="icon" href="images\favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <table cellspacing="10">
-        <colgroup>
+         <!--   you can use this ColumnGrouping to color the cells but you're better off using CSS
+            <colgroup>
             <col />
             <col style="background-color: rgb(0, 255, 200)" />
-          </colgroup>
+          </colgroup>  
+         -->
+         <!-- if you add an image to a different folder, you would need to define a path <img src="foldername/teamsexpertcert.png"> -->
+ 
         <tr>
-            <td><img src="https://www.conversant.technology/c/team/1x/IMG_0712-Edit-min.jpg" alt="Roy Profile picture"></td>
-            <td><h1>Roy Chaaya</h1>
+            <td><img id="myPhoto" src="https://www.conversant.technology/c/team/1x/IMG_0712-Edit-min.jpg" alt="Roy Profile picture"></td>
+            <td><h1 id="myName">Roy Chaaya</h1>
                 <p><em>Head of Service Delivery at <a target="_blank" href="https://www.conversant.technology/">Conversant Technology.</em></a></p>
                 <p>Over 10 years of experience in Telecom.</p></td>
+            <td><img class="msCertLogo" src="images\teamsexpertcert.png"></td>
+            <td><img class="msCertPPLogo" src="images\CertPower-Platform.png"></td>
         </tr>
     </table>
     
-    <hr size="3" color="blue">
+    <hr>
 
     <h3>Education</h3>
     <ul>
@@ -27,19 +39,21 @@
         <li>BA in English Philology</li>
     </ul>
 
+    <hr>
+
     <h3>Skills</h3> 
     <ol type="i">
-        <li>Certified Microsoft Teams Voice Expert</li>
-        <li>Certified Microsoft Power Platform Consultant</li>
-        <li>Good knowledged of TCP/IP, UDP and SIP ⭐⭐⭐⭐</li>
-        <li>Frontend:
+        <li>Certified Microsoft Teams Voice Expert ⭐⭐⭐⭐⭐</li>
+        <li>Certified Microsoft Power Platform Consultant ⭐⭐⭐</li>
+        <li>Good knowledged of TCP/IP, UDP and SIP ⭐⭐⭐</li>
+        <li><span class="crossthru">Frontend</span>:
             <ul>
                 <li>Good knowledged of HTML ⭐⭐⭐</li>
-                <li>Good knowledged of CSS</li>
-                <li>Good knowledged of JavaScript</li>
+                <li>Good knowledged of CSS⭐⭐⭐</li>
+                <li>Good knowledged of JavaScript⭐</li>
             </ul>
         </li>
-        <li>Backend:
+        <li><span class="crossthru">Backend</span>:
             <ul>
                 <li>Basic knowledged of Java ⭐</li>
                 <li>Basic knowledged of Python ⭐</li>
@@ -47,12 +61,11 @@
             </ul>
          </li>
     </ol>
+    
+    <hr>
 
     <h3>Work experience</h3>
     <table border="1">
-        <colgroup>
-            <col style="background-color: rgb(0, 225, 255)" span="2" />
-          </colgroup>
         <thead>
             <tr>
                 <th>Year</th>
@@ -69,20 +82,24 @@
                 <td>Head of Service Delivery at <strong>Conversant Technology</strong></td>
             </tr>
         </tbody>
-   <!--     <tfoot>
+        <tfoot>
             <tr>
+                <td>2023-XXXX</td>
                 <td>&nbsp;</td>
             </tr>
-        </tfoot> -->
+        </tfoot>
     </table>
 
+    <hr> 
 
+    <div class="container-bottom">
+        <img class="chillies" src="images/chillies.png" alt="red chillies">
+        <p><a target="_blank" href="Contact.html"> My Contact Details</a></p>
+        <img class="convicon" src="images/ConIcon.jpeg" alt="converant icon">
+        <p><a target="_blank" href="Assign.html">Conversant PS</a></p>
+    </div>
 
-    <p><a target="_blank" href="Contact.html"> My Contact Details</a></p>
-
-    <img src="images\teamsexpertcert.png"> 
-    <!-- if you add an image to a different folder, you would need to define a path <img src="foldername/teamsexpertcert.png"> -->
-
-
+     
+    
 </body>
 </html>
